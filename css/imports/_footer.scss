@@ -1,0 +1,111 @@
+footer {
+    background: linear-gradient(205deg, #0101018f, #01010170), 
+                url("../../images/black-close-up-dark-dew-396547.jpg");
+    background-position: left;
+    color: var(--light);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .container {
+        margin-left: 10%;
+        width: 288px;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-weight: 900;
+        .title {
+            position: relative;
+            font-family: Barlow;
+            padding: var(--seven-px) 0px;
+
+            p {
+                color: white;
+                font-size: 1.3rem;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 20px;
+                height: 2px;
+                background-color: var(--blue-01);
+            }
+        }
+        .content {
+            height: 40%;
+            font-family: Barlow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            p {
+                width: 52%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    width: 16px;
+                }
+            }
+        }
+        .social {
+            width: 45%;
+            height: 20%;
+            img {
+                height: 16px;
+            }
+            .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                box-shadow: 0px 1px 1px #5a5a5aff;
+                padding: var(--three-px) var(--seven-px);
+                input[type=radio] {
+                    display: none;
+                }
+                label {
+                    position: relative;
+                    width: fit-content;
+                    overflow: hidden;
+                    padding: var(--seven-px);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        background-color: #9ebaf380;
+                        border-radius: 50% 50% 0px 0px;
+                        height: 0%;
+                        width: 100%;
+                        transition: 0.4s;
+                    }
+                    &:hover {
+                        transform: translateY(-1px);
+                    }
+                    &:active {
+                        &::before {                            
+                            z-index: -1;
+                            height: 180%;
+                        }
+                    }
+                }
+            }
+            .display {
+                margin-top: var(--ten-px);
+                height: 40px;
+                width: 300px;                
+                font-size: 0.9rem;
+                transition: 0.5s;
+                span {
+                    margin-left: var(--seven-px);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

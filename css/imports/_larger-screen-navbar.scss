@@ -1,0 +1,15 @@
+@media (min-width: 1000px) {
+    nav {
+        #navbar-main {
+            .content {
+                .logo {
+                    width: fit-content;
+                    font-size: 1.3rem;
+                }
+                .category {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

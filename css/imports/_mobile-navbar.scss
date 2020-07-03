@@ -1,0 +1,62 @@
+nav {
+    color: var(--blue-02);
+    height: 0px;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 3px #e0e0e08a, 0px 1px 3px #9a9a9ab0;
+    #navbar-main {
+        padding: calc(var(--ten-px) * 1.3) 0px calc(var(--seven-px) * 0.03) var(--seven-px);
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 209px;
+                height: 2.6rem;
+                overflow: hidden;
+                font-size: 1rem;
+                font-family: Tangerine, Gabriola;
+            }
+            .category {
+                width: 160px;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    li {
+                        padding: var(--seven-px) var(--three-px);
+                        list-style: none;   
+                        transition: 0.2s;  
+                        cursor: pointer;
+                        &:hover {
+                            transform: translateY(-2px);
+                        }     
+                        &:active {
+                            transform: translateY(-1px);
+                        }              
+                    }
+                    select {
+                        color: var(--blue-02);
+                        padding: var(--seven-px) var(--three-px);
+                        border-color: var(--blue-02);
+                        border-radius: var(--three-px);
+                        background-color: #ffffff5f;
+                        option {
+                            background-color: #ffffff5f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

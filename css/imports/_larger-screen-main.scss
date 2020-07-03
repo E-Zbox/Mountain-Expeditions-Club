@@ -1,0 +1,95 @@
+@media (min-width: 1000px) {
+    #main-main {
+        width: 100%;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #section-01 {
+                width: 850px;
+                height: 60vh;
+                .content {
+                    width: 80%;
+                    h1 {
+                        font-size: 3rem;
+                        letter-spacing: 0.2rem;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                        width: 70%;
+                        line-height: 1.6rem;
+                    }
+                }
+            }   
+            #section-02 {
+                .content {
+                    width: 80%;
+                }
+            }
+            #section-03 {
+                height: 40vh;
+                background-size: 100% 950px;
+                background-position: center;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%,
+                    0% 100%, 0% 65%, 5% 55%, 0% 45%
+                );
+                .container {
+                    .title {
+                        h2 {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    .content {
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+            #section-04 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .container {
+                    width: 100%;
+                    .contents {
+                        width: 80%;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        .content {
+                            height: 40vh;
+                            overflow: hidden;
+                            .text {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1300px) {
+    #main-main {
+        .container {
+            #section-01 {
+                height: 130vh;
+            }
+            #section-03 {
+                height: 60vh;
+                background-position: center;
+                background-size: 100% 200vh;
+            }
+            #section-04 {
+                .container {
+                    .contents {
+                        width: 60%;
+                        .content {
+                            height: 92vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
